@@ -3,7 +3,258 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cuong's Grocery Store</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Antonio&family=Inter:wght@400;500;700&display=swap");
+
+      * {
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      li {
+        list-style-type: none;
+        padding: 2em;
+        font-size: 1.1em;
+      }
+
+      .item-category {
+        text-align: center;
+        background-color: green;
+        color: white;
+        padding: 10px;
+      }
+
+      .items {
+        display: flex;
+        justify-content: center;
+      }
+
+      .item {
+        width: 400px;
+        padding: 3em;
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+
+      .item-img {
+        width: 300px;
+      }
+
+      .add-cart-btn {
+        background: #ff4742;
+        border: none;
+        border-radius: 6px;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 12px 14px;
+        margin-top: 1em;
+        text-align: center;
+      }
+
+      #more-info {
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+      }
+
+      .more-info-element {
+        margin: 1em;
+      }
+
+      .more-info-element h2 {
+        text-align: center;
+      }
+
+      footer {
+        background-color: lightgray;
+        text-align: center;
+        padding: 0.1em;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <section id="store-name">
+        <h1>Cuong's Grocery Store</h1>
+        <em>The best place to buy food on Earth!</em>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#meat-poultry">Meat & Poultry</a></li>
+          <li><a href="#vegetables">Vegetables</a></li>
+          <li><a href="#spices">Spices</a></li>
+          <li><a href="/Week1/Day3/form.html">Products Order Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="meat-poultry">
+        <h2 class="item-category">Meat & Poultry</h2>
+        <section class="items">
+          <article class="item">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/8781/228329/bhx/ba-roi-heo-cp-khay-500g-202202111520572889.jpg"
+              alt="pork"
+              class="item-img"
+            />
+            <h3>Pork</h3>
+            <p><u>Price</u>: 100.000VND / KG</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </article>
+          <article class="item">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/8139/306315/bhx/ba-chi-bo-my-fohla-cuon-dong-lanh-250g-202309121544497152.jpg"
+              alt="beef"
+              class="item-img"
+            />
+            <h3>Beef</h3>
+            <p><u>Price</u>: 150.000VND / KG</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </article>
+          <article class="item">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/8790/226876/bhx/dui-toi-ga-cp-khay-500g-4-6-dui-202202111508457575.jpg"
+              alt="chicken"
+              class="item-img"
+            />
+            <h3>Chicken</h3>
+            <p><u>Price</u>: 80.000VND / KG</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </article>
+        </section>
+      </section>
+      <section id="vegetables">
+        <h2 class="item-category">Vegetables</h2>
+        <section class="items">
+          <article class="item">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/8820/309238/bhx/cai-thia-500g-202401101329048276.jpg"
+              alt="green"
+              class="item-img"
+            />
+            <h3>Greens</h3>
+            <p><u>Price</u>: 10.000VND / Pack</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </article>
+          <article class="item">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/8779/234856/bhx/nam-linh-chi-nau-150g-202306170843408239.jpg"
+              alt="mushroom"
+              class="item-img"
+            />
+            <h3>Mushroom</h3>
+            <p><u>Price</u>: 50.000VND / Pack</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </article>
+          <article class="item">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/8788/272140/bhx/chuoi-gia-giong-nam-my-hop-1kg-6-7-trai-202212021509521853.jpg"
+              alt="fruit"
+              class="item-img"
+            />
+            <h3>Fruit</h3>
+            <p><u>Price</u>: 20.000VND / KG</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </article>
+        </section>
+      </section>
+      <section id="spices">
+        <h2 class="item-category">Spices</h2>
+        <section class="items">
+          <article class="item">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/2286/82902/bhx/dau-dau-nanh-nguyen-chat-simply-can-5-lit-202308081107028399.jpg"
+              alt="oil"
+              class="item-img"
+            />
+            <h3>Vegetable Oil</h3>
+            <p><u>Price</u>: 250.000VND / Bottle</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </article>
+          <article class="item">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/2289/113244/bhx/nuoc-mam-ca-com-584-nha-trang-15-do-dam-can-2-lit-202210212109289660.jpg"
+              alt="fishsauce"
+              class="item-img"
+            />
+            <h3>Fish sauce</h3>
+            <p><u>Price</u>: 60.000VND / Bottle</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </article>
+          <article class="item">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/2804/77187/bhx/duong-phen-hat-to-hoang-long-goi-500g-201912121527430211.jpg"
+              alt="sugar"
+              class="item-img"
+            />
+            <h3>Sugar</h3>
+            <p><u>Price</u>: 30.000VND / Pack</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </article>
+        </section>
+      </section>
+      <section id="more-info">
+        <article class="more-info-element" id="online-video">
+          <h2>Our Store Video</h2>
+          <iframe
+            width="400"
+            height="300"
+            src="https://www.youtube.com/watch?v=lM9cqfQ0hCA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""
+          ></iframe>
+        </article>
+        <article class="more-info-element" id="location">
+          <h2>Our Store Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.3870103991592!2d106.69219088711425!3d10.729450541237822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1678337072898!5m2!1sen!2s"
+            width="400"
+            height="300"
+            style="
+              border: 0px;
+              --darkreader-inline-border-top: initial;
+              --darkreader-inline-border-right: initial;
+              --darkreader-inline-border-bottom: initial;
+              --darkreader-inline-border-left: initial;
+            "
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            data-darkreader-inline-border-top=""
+            data-darkreader-inline-border-right=""
+            data-darkreader-inline-border-bottom=""
+            data-darkreader-inline-border-left=""
+          ></iframe>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h4>
+        © Copyright 2023 by Nguyen Nghia Cuong @ RMIT Vietnam | COSC3058 - Day 3
+        - Ecommerce Website
+      </h4>
+    </footer>
+  </body>
 </html>
